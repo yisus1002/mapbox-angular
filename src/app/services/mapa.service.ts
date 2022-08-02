@@ -15,7 +15,6 @@ export class MapaService {
     this.getUserlocation().then(()=>{
       console.log(this.userlocatio)
     }
-
     );
    }
 
