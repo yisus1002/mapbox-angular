@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class MapaService {
   public userlocatio?:[number, number]
+  maxpboxkey='pk.eyJ1IjoiamVzdXNnMTAwMiIsImEiOiJja3p3N2MxazUxNmE0MnZtaHBjbTVoeDh5In0.t2Af6kwawJdt3b9xYby9Pw';
 
   get isUserlocationReady(): boolean{
    return !!this.userlocatio; 

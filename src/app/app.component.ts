@@ -1,6 +1,4 @@
-import { MapaService } from './services/mapa.service';
-import { map } from 'rxjs';
-import { environment } from './../environments/environment.prod';
+import { MapaService } from './services/mapa.service';  
 import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl'; 
 @Component({
@@ -49,7 +47,7 @@ export class AppComponent implements OnInit{
         }
         Cmapa(lon:any, lat:any){
              
-        (mapboxgl as typeof mapboxgl).accessToken = environment.maxpboxkey;
+        (mapboxgl as typeof mapboxgl).accessToken = this.ubu.maxpboxkey;
         this.mapa = new mapboxgl.Map({
           container: 'mapa-mapbox', // container ID
           style: 'mapbox://styles/mapbox/dark-v10', // style URL
